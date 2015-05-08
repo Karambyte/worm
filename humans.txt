@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jamie Hoyle - Front-end Developer - @mightyshakerjnr
+    Alan Doherty - Back-end Developer - @theframeworkguy
+
+# THANKS
+
+    Democracy Club, Highcharts, BBC News Labs
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SVG Animations
+    Normalize.css, jQuery, Modernizr, Highcharts
+    Node, Socket.io, Twitter

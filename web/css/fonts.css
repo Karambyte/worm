@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'geomanist';
+    src: url('/fonts/geomanist-light-webfont.ttf') format('truetype'),
+	     url('/fonts/geomanist-light-webfont.eot'),
+         url('/fonts/geomanist-light-webfont.svg#geomanistthin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('/fonts/geomanist-regular-webfont.ttf') format('truetype'),
+	     url('/fonts/geomanist-regular-webfont.eot'),
+         url('/fonts/geomanist-regular-webfont.svg#geomanistthin') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('/fonts/geomanist-medium-webfont.ttf') format('truetype'),
+	     url('/fonts/geomanist-medium-webfont.eot'),
+         url('/fonts/geomanist-medium-webfont.svg#geomanistthin') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('/fonts/geomanist-bold-webfont.ttf') format('truetype'),
+	     url('/fonts/geomanist-bold-webfont.eot'),
+         url('/fonts/geomanist-bold-webfont.svg#geomanistthin') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}

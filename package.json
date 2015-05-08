@@ -1,0 +1,12 @@
+{
+  "version": "2.9.1",
+  "name": "ge2015-worm",
+  "description": "a worm for the General Election.",
+  "main": "./index.js",
+  "dependencies": {
+    "colors": "*",
+    "node-twitter": "*",
+    "sentiment": "*",
+    "socket.io": "*"
+  }
+}

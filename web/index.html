@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>#GE2015 Worm</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header">
+            <div class="container">
+                <span class="site">KARAMBYTE</span>
+                <h1><a href="http://twitter.com/search?q=GE2015">#GE2015</a> Worm</h1>
+                <h2>What are people thinking about political parties right now? Have a look with our <a href="#">worm</a>.</h2>
+            </div>
+        </header>
+        <div class="container">
+            <p>NB: If the chart stops working, reload the page. Server stress isn't fun!</p>
+            <div id="chart" style="min-width: 310px; height: 400px; margin: 0 auto">
+
+            </div>
+        </div>
+        <div id="partyListings">
+            <div class="container">
+                <h1>Total happiness rank</h1>
+                <div id="results">
+                    <div class="con party">
+                        <h3><span style="color: #0087DC">Conservative Party</span><span class="total"></span></h3>
+                    </div>
+                    <div class="lab party">
+                        <h3><span style="color: #DC241f">Labour Party</span><span class="total"></span></h3>
+                    </div>
+                    <div class="lib party">
+                        <h3><span style="color: #FDBB30">Liberal Democrats</span><span class="total"></span></h3>
+                    </div>
+                    <div class="ukip party">
+                        <h3><span style="color: #70147A">UK Independence Party</span><span class="total"></span></h3>
+                    </div>
+                    <div class="green party">
+                        <h3><span style="color: #6AB023">Green Party</span><span class="total"></span></h3>
+                    </div>
+                    <div class="snp party">
+                        <h3><span style="color: rgb(240, 217, 63)">Scottish National Party</span><span class="total"></span></h3>
+                    </div>
+                    <div class="dup party">
+                        <h3><span style="color: #D46A4C">Democratic Unionist Party</span><span class="total"></span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <p>Built by <a target="_blank" href="http://twitter.com/mightyshakerjnr">Jamie Hoyle</a> and <a target="_blank" href="http://twitter.com/theframeworkguy">Alan Doherty</a> from <a target="_blank" href="http://karambyte.com">Karambyte</a>.</p>
+            </div>
+        </footer>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/highcharts.min.js"></script>
+        <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
