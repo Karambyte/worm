@@ -1,9 +1,11 @@
 var worm = {};
 
 var Twitter = require('node-twitter');
-var sentiment = require('sentiment'),
+var Sentiment = require('sentiment'),
 	colors = require('colors');
 var socketio = require('socket.io');
+
+var sentiment = new Sentiment();
 
 //
 // create socket io server
@@ -113,12 +115,13 @@ var hashtags = {
 	"#greenparty" : {"green" : 1},
 	"#votegreen" : {"green" : 1},
 	"#votinggreen" : {"green" : 1},
-	"#votegreen2015" : {"green" : 1},
 	"#snp" : {"snp" : 1},
 	"#snpout" : {"snp" : -1},
 	"#votesnp" : {"snp" : 1},
 	"#dup" : {"dup" : 1},
-	"#plaid15" : {"plaid" : 1},
+	"#BorisTheCoward": {"con" : -1},
+	"#LabourLies": {"lab" : -1},
+	"#CowardlyJohnson": {"con" : -1}
 };
 
 //
@@ -135,10 +138,10 @@ var _parties = [];
 // twitter client
 //
 var twitterStreamClient = new Twitter.StreamClient(
-	'key',
-	'secret',
-	'token',
-	'token_secret'
+	process.env.TWITTER_KEY,
+	process.env.TWITTER_SECRET,
+	process.env.TWITTER_TOKEN,
+	process.env.TWITTER_TOKEN_SECRET
 );
 
 //
@@ -292,7 +295,7 @@ worm.start = function() {
 }
 
 worm.analyse = function(tweet) {
-	var result = sentiment(tweet.text);
+	var result = sentiment.analyze(tweet.text);
 
 	// get score data
 	var scoreData = worm.getScore(tweet.entities.hashtags, result.score);
