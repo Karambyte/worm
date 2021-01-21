@@ -7,6 +7,6 @@
     "colors": "1.4.0",
     "node-twitter": "0.5.3",
     "sentiment": "5.0.2",
-    "socket.io": "2.3.0"
+    "socket.io": "2.4.0"
   }
 }
